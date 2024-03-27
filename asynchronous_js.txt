@@ -1,0 +1,24 @@
+synchronous code = In an ordered sequence.
+		   Step-by-step linear instructions
+		   (Start now, finish now)
+
+
+asynchronous code = Out of sequence.
+		    Ex. Access a database
+		    Fetch a file
+		    Tasks that take time
+		    (start now, finish sometime later)
+
+
+
+// synchronous code
+
+console.log("Hello!");
+console.log("This is synchronous.");
+console.log("Thank you!");
+
+// asynchronous code
+
+console.log("Hello!");
+setTimeout(() => console.log("This is asynchronous."), 5000);
+console.log("Thank you!");
